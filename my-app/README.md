@@ -39,3 +39,7 @@ pull_request: branches: ['main'];
 ```yml
 runs-on: ubuntu-latest
 ```
+
+- note - the .github folder has to be outside your project folder (i.e. at the same level as my-app in this case)
+- further:
+  - use `actions/checkout@v3` and `actions/setup-node@v3` and node 18.x instead of @v1
