@@ -40,5 +40,5 @@ jobs:
       - name: Start the app 📤
         run: |
           cd my-app
-          npm start &
+          npm run dev &
           npx wait-on --timeout 60000

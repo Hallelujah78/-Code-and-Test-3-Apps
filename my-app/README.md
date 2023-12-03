@@ -17,6 +17,10 @@ npx degit fabri4c/vite-react-starter#main
 - `git commit --m "message" --m "details"`
 - `git push -u origin main`
 
+- note: the `fabri4c/vite-react-starter#main` template is not set up to allow testing of jsx out of the box
+  - it contains old packages - it is not updated and maintained
+  - DO NOT USE
+
 # React Testing Course for Beginners - Code and Test 3 Apps
 
 ## Github actions
