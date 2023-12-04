@@ -9,9 +9,15 @@ npx degit fabri4c/vite-react-starter#main
 ```
 
 - this will copy a repo from git that is a template project that includes different libraries including Jest and RTL
-- `git init`
+- `git init -b main`
 - `npm i`
-- create a new repo on GitHub
+- create a new repo on GitHub, from the command line:
+
+```js
+gh repo create
+```
+
+- and follow the prompts
 - `git remote add origin linkToGitHubRepo`
 - `git add .`
 - `git commit --m "message" --m "details"`
