@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
-import App from '../App';
-import logo from  '../assets/images/logo.svg';
+import App from './App';
+import logo from  './assets/images/logo.svg';
 
 test('a logo is rendered with the correct source', () => {
   render(<App />);

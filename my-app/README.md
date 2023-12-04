@@ -20,6 +20,8 @@ npx degit fabri4c/vite-react-starter#main
 - note: the `fabri4c/vite-react-starter#main` template is not set up to allow testing of jsx out of the box
   - it contains old packages - it is not updated and maintained
   - DO NOT USE
+  - you can run `npm update --save` in your project's root to update all packages to the latest versions
+    - note that this still won't magically set up testing of jsx in Jest
 
 # React Testing Course for Beginners - Code and Test 3 Apps
 
@@ -65,3 +67,30 @@ runs-on: ubuntu-latest
 ```js
 npm i @wdio/cli
 ```
+
+- config
+
+```js
+npx wdio config
+```
+
+- options
+  - E2E testing
+  - In the cloud Sauce Labs
+  - web app in the browser
+  - chrome browser
+  - sauce_username
+  - sauce_access_key
+  - eu
+  - sauce connect - no (might be yes, not sure)
+  - mocha
+  - no compiler
+  - webdriverio generate test files = no
+  - add a plugin in to test setup = no (maybe?)
+  - add a service to test setup = sauce and chromedriver
+  - do let the configurator run npm (it will run pnpm and fail)
+  - install the following:
+  ```js
+  npm add @wdio/local-runner@latest @wdio/mocha-framework@latest @wdio/spec-reporter@latest @wdio/sauce-service@latest --save-dev
+  ```
+  - `npm i @wdio/local-runner`
