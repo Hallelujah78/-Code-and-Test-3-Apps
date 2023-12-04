@@ -15,5 +15,5 @@ test('a link is displayed with the correct href', ()=>{
 render(<App/>);
 const link = screen.getByRole('link', {name: /learn react/i});
 expect(link).toBeInTheDocument();
-expect(link).toHaveAttribute('href', "https://react.dev/")
-})
+expect(link).toHaveAttribute('href', "https://react.dev/");
+});
