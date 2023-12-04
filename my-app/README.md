@@ -47,3 +47,21 @@ runs-on: ubuntu-latest
 - note - the .github folder has to be outside your project folder (i.e. at the same level as my-app in this case)
 - further:
   - use `actions/checkout@v3` and `actions/setup-node@v3` and node 18.x instead of @v1
+
+## Add Visual Testing
+
+- at this point we've done two component tests
+  - a url with the right text exists and the url is correct
+  - a logo is rendered and the src is correct
+- now we check that
+  - the app renders correctly
+  - app looks as expected on web and mobile
+- for visual testing
+  - webdriverio
+  - visual snapshots in different resolutions in browser
+    - makes sure its responsive and looks correct on different devices
+- install webdriverio
+
+```js
+npm i @wdio/cli
+```
